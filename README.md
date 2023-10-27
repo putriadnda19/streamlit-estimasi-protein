@@ -5,7 +5,7 @@
 
 ## Domain Proyek
 
-Protein adalah nutrisi yang berperan penting dalam proses metabolisme tubuh, memperbaiki sel tubuh, dan memproduksi sel baru. Guna memenuhi kebutuhan protein, terdapat beberapa makanan berprotein tinggi yang bisa dikonsumsi.Protein sangat penting bagi orang yang ingin menjaga organ tubuh tetap berfungsi dengan baik dan melindungi tubuh dari serangan penyakit.
+Protein adalah nutrisi yang berperan penting dalam proses metabolisme tubuh, memperbaiki sel tubuh, dan memproduksi sel baru. Guna memenuhi kebutuhan protein, terdapat beberapa makanan berprotein tinggi yang bisa dikonsumsi. Protein sangat penting bagi orang yang ingin menjaga organ tubuh tetap berfungsi dengan baik dan melindungi tubuh dari serangan penyakit.
 
 ## Business Understanding
 
@@ -23,7 +23,7 @@ Bagian laporan ini mencakup:
 - Mengetahui menu mana saja yang ada di McDonalds yang protein nya baik dan buruk.
 
 ### Solution statements
-- Pengembangan Platform Pencarian Estimasi Protein dalam menu McDonalds Berbasis Web, Solusi pertama adalah mengembangkan platform pencarian Estimasi Protein dalam menu McDonalds Berbasis Web yang mengintegrasikan data dari Kaggle.com untuk memberikan pengguna akses cepat dan mudah ke informasi tentang estimasi protein dalam menu McDonalds. Platform ini akan menyediakan antarmuka pengguna yang ramah. 
+- Pengembangan Platform pencarian Estimasi Protein dalam menu McDonalds Berbasis Web, solusi pertama adalah mengembangkan platform pencarian Estimasi Protein dalam menu McDonalds Berbasis Web yang mengintegrasikan data dari Kaggle.com untuk memberikan pengguna akses cepat dan mudah ke informasi tentang estimasi protein dalam menu McDonalds. Platform ini akan menyediakan antarmuka pengguna yang ramah. 
 - Model yang dihasilkan dari datasets itu menggunakan metode Linear Regression.
 
 ## Data Understanding
@@ -64,7 +64,7 @@ Dataset yang saya gunakan berasal jadi Kaggle yang berisi protein dalam menu McD
 Untuk data collection ini, saya mendapatkan dataset yang nantinya digunakan dari website kaggle dengan nama dataset Nutrition Facts for McDonalds Menu. Datasetnya bisa di download pada link diatas.
 
 ### Data Discovery And Profiling
-Untuk bagian ini, kita akan menggunakan teknik EDA. <br>
+Untuk bagian ini, saya akan menggunakan teknik EDA. <br>
 Pertama kita mengimport semua library yang dibutuhkan, 
 ``` bash
 import pandas as pd
@@ -78,18 +78,18 @@ Karena kita menggunakan google colab untuk mengerjakannya maka kita akan import 
 from google.colab import files
 ```
 
-Lalu mengupload token kaggle agar nanti bisa mendownload sebuah dataset dari kaggle melalui google colab
+Lalu mengupload token kaggle agar nanti bisa mendownload sebuah datasets dari kaggle melalui google colab
 ``` bash
 file.upload()
 ```
-Setelah mengupload filenya, maka kita akan lanjut dengan membuat sebuah folder untuk menyimpan file kaggle.json yang sudah diupload tadi
+Setelah mengupload filenya, maka akan lanjut dengan membuat sebuah folder untuk menyimpan file kaggle.json yang sudah diupload tadi, 
 ``` bash
 !mkdir -p ~/.kaggle
 !cp kaggle.json ~/.kaggle/
 !chmod 600 ~/.kaggle/kaggle.json
 !ls ~/.kaggle
 ```
-Done, lalu mari kita download datasetsnya
+Lalu mari kita download datasets nya, 
 ``` bash
 !kaggle datasets download -d mcdonalds/nutrition-facts
 ```
@@ -99,7 +99,7 @@ Selanjutnya kita harus extract file yang tadi telah didownload
 !unzip nutrition-facts.zip -d nutrition-facts
 !ls nutrition-facts
 ```
-Mari lanjut dengan memasukkan file csv yang telah diextract pada sebuah variable, dan melihat 5 data paling atas dari datasetsnya
+Lanjut dengan memasukkan file csv yang telah diextract pada sebuah variable,
 ``` bash
 df = pd.read_csv('nutrition-facts/menu.csv')
 df.head()
@@ -163,7 +163,7 @@ input_data = np.array([[8, 3, 3, 25, 770, 250, 30]])
 prediction = lr.predict(input_data)
 print('Estimasi kalori dalam Egg White Delight McDonalds :', prediction)
 ```
-Sekarang modelnya sudah selesai, mari kita export sebagai sav agar nanti bisa kita gunakan pada project web streamlit kita.
+Sekarang modelnya sudah selesai, mari kita export sebagai file sav agar nanti bisa kita gunakan pada project web streamlit kita.
 ``` bash
 import pickle
 
@@ -188,4 +188,4 @@ dan variable independen berkolerasi tinggi.
 
 ## Deployment
 
-[Estimasi Protein Menu McDonald](https://app-estimasi-protein-giutfqlbvjevjdp2ux6bnw.streamlit.app/).
+[Estimasi Protein Menu McDonald](https://app-estimasi-protein-giutfqlbvjevjdp2ux6bnw.streamlit.app/). 
