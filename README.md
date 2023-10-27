@@ -27,7 +27,7 @@ Bagian laporan ini mencakup:
 - Model yang dihasilkan dari datasets itu menggunakan metode Linear Regression.
 
 ## Data Understanding
-Dataset yang saya gunakan berasal jadi Kaggle yang berisi protein dalam menu McDonalds. Dataset ini mengandung 260 baris dan 24 columns.<br> 
+Dataset yang saya gunakan berasal jadi Kaggle yang berisi protein dalam menu McDonalds. Dataset ini mengandung 260 baris dan 25 columns.<br> 
 
 [Nutrition Facts for McDonald's Menu](https://www.kaggle.com/datasets/mcdonalds/nutrition-facts).
 
