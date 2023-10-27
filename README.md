@@ -188,7 +188,4 @@ dan variable independen berkolerasi tinggi.
 
 ## Deployment
 
-[My Estimation App](https://estimation-application-with-dontkeep.streamlit.app/).
-
-![Alt text](image-2.png)
-
+[Estimasi Protein Menu McDonald](https://app-estimasi-protein-giutfqlbvjevjdp2ux6bnw.streamlit.app/).
