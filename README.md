@@ -167,7 +167,7 @@ Sekarang modelnya sudah selesai, mari kita export sebagai sav agar nanti bisa ki
 ``` bash
 import pickle
 
-filename = "estimasi_apartment.sav"
+filename = "estimasi_protein.sav"
 pickle.dump(model,open(filename,'wb'))
 ```
 
