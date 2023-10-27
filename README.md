@@ -32,7 +32,7 @@ Dataset yang saya gunakan berasal jadi Kaggle yang berisi protein dalam menu McD
 [Nutrition Facts for McDonald's Menu](https://www.kaggle.com/datasets/mcdonalds/nutrition-facts).
 
 
-### Variabel-variabel pada Apartment Prices for Azerbaijan Market adalah sebagai berikut:
+### Variabel-variabel pada Nutrition Facts for McDonald's Menu adalah sebagai berikut:
 - Category            : Menunjukkan dalam makanan. [Tipe data: String, Contoh: Breakfast, Beef & Pork]
 - Item         : Menunjukkan nama menu.[Tipe data: String, Contoh: Egg McMuffin, Egg White Delight]
 - Serving Size            : Menunjukkan jumlah ukuran porsi.[Tipe data: String, Contoh: 4,8 oz (136 g)]
