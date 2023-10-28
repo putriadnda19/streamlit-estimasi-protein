@@ -9,7 +9,7 @@ Protein adalah nutrisi yang berperan penting dalam proses metabolisme tubuh, mem
 
 ## Business Understanding
 
-Untuk orang-orang yang sangat menjaga kesehatan, mengetahui protein dari menu di McDonalds itu penting agar bisa membedakan dan tau mana yang berprotein baik dan mana susu yang berprotein buruk.
+Untuk orang-orang yang sangat menjaga kesehatan, mengetahui protein dari menu di McDonalds itu penting agar bisa membedakan dan tau mana yang berprotein baik dan mana yang berprotein buruk.
 
 Bagian laporan ini mencakup:
 
